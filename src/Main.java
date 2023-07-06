@@ -6,12 +6,5 @@ public class Main {
         int b = calc.minus.apply(1, 1);
         int c = calc.divide2.apply(a, b);
         System.out.println(c);
-        //или
-        try {
-            int d = calc.divide3.apply(a, b);
-            calc.println.accept(d);
-        } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
-        }
     }
 }
